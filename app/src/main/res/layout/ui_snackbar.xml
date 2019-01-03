@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="gefei.com.viewdemo.material.UISnackbar">
+
+    <include layout="@layout/view_title_bar">
+
+    </include>
+    <TextView
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x150"
+        android:padding="@dimen/x10"
+        android:clickable="true"
+        android:background="@drawable/ripple"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="水波纹"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:background="@drawable/ripple"
+                    android:id="@+id/btn_snackbar_simple"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="显示简单提示条"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+                <Button
+                    android:id="@+id/btn_snackbar_action"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="显示可交互提示条"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x150"
+            android:padding="@dimen/x10"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="阴影"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:id="@+id/textView"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:background="@drawable/shadow"
+            android:gravity="center"
+            android:padding="@dimen/x10"
+            android:text="阴影"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+        <TextView
+
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

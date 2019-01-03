@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="gefei.com.viewdemo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uianim.UICarAnim"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+        </activity>
+        <activity
+            android:name=".progress.UIProgress"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+        </activity>
+        <activity android:name=".uianim.UIPull">
+        </activity>
+        <activity
+            android:name=".rtmp.VitamioVideoViewActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".layout.UIFlexBox">
+        </activity>
+        <activity android:name=".layout.UIFlexBoxRecycleView">
+        </activity>
+        <activity android:name=".uianim.UIGif">
+        </activity>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".material.UIFloatingActionButton">
+        </activity>
+        <activity android:name=".material.UIMeterial">
+        </activity>
+        <activity
+            android:name=".material.TextInputLayout"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+        </activity>
+        <activity android:name=".material.UISnackbar">
+        </activity>
+        <!-- 设置无actionBar的主题 -->
+        <activity
+            android:name=".material.UICoordinatorLayout"
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity android:name=".material.UIToolBar">
+        </activity>
+        <activity android:name=".material.UIPalette">
+        </activity>
+        <activity android:name=".webview.UIWebView">
+        </activity>
+        <activity android:name=".view.UIGurest">
+        </activity>
+        <activity android:name=".ui.UITwoLayout">
+        </activity>
+        <activity
+            android:name=".ui.UIOpenHtml"
+            android:hardwareAccelerated="false">
+        </activity>
+        <activity android:name=".ui.UITTSActivity">
+        </activity>
+    </application>
+
+</manifest>

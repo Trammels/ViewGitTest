@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avl_loading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        app:indicatorColor="@color/theme_color"
+        app:indicatorName="BallZigZagDeflectIndicator" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marge_half_left"
+        android:text="加载中"
+        android:textColor="@color/hint_text"
+        android:visibility="gone" />
+</LinearLayout>
