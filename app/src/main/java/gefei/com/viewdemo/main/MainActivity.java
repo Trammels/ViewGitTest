@@ -54,7 +54,7 @@ public class MainActivity extends BaseActivity {
 
         Button button = new Button(this);
 //        button.setWidth(UIUtils.getScreenWidth(this));
-        button.setText("测试");
+        button.setText("测试1");
         button.setLayoutParams(params);
         ll.addView(button);
     }
